@@ -89,7 +89,7 @@ pallet-im-online = { version = "4.0.0-dev", default-features = false, git = "htt
 node-runtime = { version = "3.0.0-dev", path="../runtime" }
 node-rpc = { version = "3.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17" }
 node-primitives = { version = "2.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17" }
-node-executor = { version = "3.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17" }
+# node-executor = { version = "3.0.0-dev", path = "../executor" }
 
 # CLI-specific dependencies
 sc-cli = { version = "0.10.0-dev", optional = true, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17" }
@@ -147,7 +147,7 @@ pallet-balances = { version = "4.0.0-dev", git = "https://github.com/paritytech/
 [features]
 default = ["cli"]
 cli = [
-	"node-executor/wasmi-errno",
+	# "node-executor/wasmi-errno",
 	"node-inspect",
 	"sc-cli",
 	"frame-benchmarking-cli",
