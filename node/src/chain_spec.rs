@@ -48,7 +48,7 @@ type AccountPublic = <Signature as Verify>::Signer;
 const TELEMETRY_URL: &str = "wss://telemetry.polkadot.io/submit/";
 const PROTOCOL_ID: &str = "geek";
 
-const PROPERTIES: &str = r#"{"tokenSymbol": "GEEK", "tokenDecimals": 18, "ss58Format": 42 }"#;
+const PROPERTIES: &str = r#"{"tokenSymbol": "GEEK", "tokenDecimals": 18, "ss58Format": 789 }"#;
 
 /// Node `ChainSpec` extensions.
 ///
